@@ -15,7 +15,12 @@ jobs:
       - name: Download the source code
         uses: actions/checkout@v5.0.0
 
+      
+      - name: Create a python file
+        run: echo "print('hello, World!')" > main.py
+        
       - name: List all dirs and files
         run: ls -al
+
 
   

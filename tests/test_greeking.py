@@ -6,6 +6,6 @@ def test_greeking():
 
     expected = "Hello, Mohamed"
 
-    result = greek("Mohamed")
+    result = greek("Mohamed!")
 
     assert result == expected

@@ -9,3 +9,11 @@ def test_greeking():
     result = greek("Mohamed")
 
     assert result == expected
+
+def test_greeking2():
+
+    expected = "Hello, Mohamed"
+
+    result = greek("Mohamed")
+
+    assert result == expected

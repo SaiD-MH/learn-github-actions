@@ -13,14 +13,14 @@ on:
 
 jobs:
   tests:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      -name: repo-chechout
-      uses: actions/checkout@v5.0.0
+      - name: repo-chechout
+        uses: actions/checkout@v5.0.0
 
-      -name: install dependancies
-      run: pip install reqrequirements.txt
+      - name: install dependancies
+        run: pip install reqrequirements.txt
 
-      -name: run tests
-      -run: pytest
+      - name: run tests
+        run: pytest

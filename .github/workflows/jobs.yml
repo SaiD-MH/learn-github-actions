@@ -7,7 +7,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - run: "echo ${{github.job}}"
+      - run: echo ${{github.job}}
 
   job2:
     runs-on: ubuntu-latest

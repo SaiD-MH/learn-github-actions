@@ -11,7 +11,7 @@ jobs:
       - name: through warning
         run: |
           outdated=true
-          if [[outdated == true]]; then
+          if [[outdated]]; then
           echo "::warning:: Please note your code have some deprecated modules"
 
           fi

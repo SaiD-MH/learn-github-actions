@@ -1,0 +1,18 @@
+on:
+  workflow_dispatch:
+
+
+
+jobs:
+  job1:
+  
+    runs-on: ubuntu-latest
+    steps:
+      - name: through warning
+        run: |
+          outdated=true
+          if [[outdated == true]]; then
+          echo "::warning:: Please note your code have some deprecated modules"
+
+          fi
+          

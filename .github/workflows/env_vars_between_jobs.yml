@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch
+
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Store Env Variable"
+        run: echo "API_KEY=123">> $GITHIB_ENV
+
+      - name: access API_KEY
+        run: echo $API_KEY

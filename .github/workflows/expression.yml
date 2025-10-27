@@ -1,0 +1,13 @@
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the event name
+        run: echo "This event name is= ${{github.event_name}}"
+        if: ${{github.event_name}} =='push'

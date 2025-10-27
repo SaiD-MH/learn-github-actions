@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Store Env Variable"
-        run: echo "API_KEY=123">> $GITHIB_ENV
+        run: echo "API_KEY=123">> $GITHUB_ENV
 
       - name: access API_KEY
         run: echo $API_KEY

@@ -1,0 +1,15 @@
+on:
+  workflow_dispatch
+
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Store Env Variable"
+        run: echo "API_KEY=123">> $GITHUB_ENV
+
+      - name: access API_KEY
+        run: |
+          echo "::add-mask::$API_KEY"
+          echo "API_KEY VALUE = $API_KEY"

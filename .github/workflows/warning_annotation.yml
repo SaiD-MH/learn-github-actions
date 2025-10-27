@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: through warning
         run: |
-          outdated=true
-          if [[outdated]]; then
+          deprecated=true
+          if [[deprecated]]; then
           echo "::warning:: Please note your code have some deprecated modules"
 
           fi

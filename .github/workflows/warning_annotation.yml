@@ -8,11 +8,9 @@ jobs:
   
     runs-on: ubuntu-latest
     steps:
-      - name: through warning
-        run: |
+      - run: |
           deprecated=true
-          if [[deprecated]]; then
+          if [[ deprecated ]]; then
           echo "::warning:: Please note your code have some deprecated modules"
-
           fi
           
